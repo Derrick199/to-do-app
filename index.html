@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <!-- Include Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen flex justify-center items-center">
+
+  <div class="w-full max-w-md p-6 bg-white rounded shadow-md">
+    <h1 class="text-2xl font-semibold mb-4">Task List</h1>
+    <form class="mb-4">
+      <label for="task" class="block mb-2">Enter a new task:</label>
+      <input type="text" id="task" name="task" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300">
+      <label for="description" class="block mt-2 mb-2">Enter Task Description:</label>
+      <input type="text" id="description" name="description" class="w-full px-3 py-2 border rounded-md shadow-sm focus:outline-none focus:ring focus:border-blue-300">
+      <button type="submit" id="add-task" class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300">
+        Add Task
+      </button>
+    </form>
+    <ul id="task-list"></ul>
+  </div>
+
+</body>
+
+</html>
